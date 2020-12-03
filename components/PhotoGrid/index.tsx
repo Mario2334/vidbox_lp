@@ -3,10 +3,10 @@ import React from "react";
 import './style.scss';
 
 const Products = [
-    { src: "/images/theater.jpg", alt: 'product image', prodcut_title: 'Product title' },
-    { src: "/images/cooking.jpg", alt: 'product image', prodcut_title: 'Product title' },
-    { src: "/images/teaching.jpg", alt: 'product image', prodcut_title: 'Product title' },
-    { src: "/images/drama.jpg", alt: 'product image', prodcut_title: 'Product title' },
+    { src: "/images/theater.jpg", alt: 'Movie', prodcut_title: 'Movie' },
+    { src: "/images/cooking.jpg", alt: 'Learn To Cook', prodcut_title: 'Learn To Cook' },
+    { src: "/images/teaching.jpg", alt: 'Learn', prodcut_title: 'Learn' },
+    { src: "/images/drama.jpg", alt: 'Play', prodcut_title: 'Play' },
 ];
 
 const PhotoGrid:React.FC = (props) =>{
