@@ -1,7 +1,12 @@
 import React from "react";
 import "./style.scss"
 
-const ContactForm:React.FC  = ({open ,modalClose}) =>{
+interface CounterProps{
+    modalClose: Function,
+    open: string
+}
+
+const ContactForm:React.FC<CounterProps>  = (props:CounterProps) =>{
     let initial_error = {
         name: null,
         email: null,
@@ -17,6 +22,8 @@ const ContactForm:React.FC  = ({open ,modalClose}) =>{
         company:'',
         errors: initial_error,
     });
+
+    let {open, modalClose} = props;
 
     function validateEmail(email:string) {
         const re = /[\w'+-]+(\.[\w'+-]+)*@\w+([-.]\w+)*\.\w{2,24}/;
