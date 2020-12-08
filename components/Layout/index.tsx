@@ -2,6 +2,7 @@ import React from "react";
 import "./style.scss"
 import PhotoGrid from "../PhotoGrid";
 import ContactForm from "../ContactForm";
+import Logo from "../Logo";
 
 const Layout:React.FC = (props) =>{
 
@@ -26,6 +27,7 @@ const Layout:React.FC = (props) =>{
     return(
         <div className="ecommerceCm">
         {/*    Add Logo  */}
+        <Logo/>
             <div className="container-fluid p-0">
                 <div className="row no-gutters">
                     <div className="col-lg-6">

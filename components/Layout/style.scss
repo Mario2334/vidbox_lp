@@ -9,6 +9,20 @@ body{
     .newsLetter:after{
       display: none;
     }
+    .logo{
+      position: absolute;
+      left: 4rem;
+      top: 2rem;
+      z-index: 8;
+      @media (max-width: 991px) {
+        left: 1.5rem;
+      }
+      a{
+        max-width: 11rem;
+        display: inline-block;
+      }
+    }
+
     .socialLinks {
       border: none;
       padding: 0;
