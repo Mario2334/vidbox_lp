@@ -22,6 +22,10 @@ const Layout:React.FC = (props) =>{
         })
     };
 
+    let AppRedirect = () =>{
+        window.location.href = "https://app.gigvid.in"
+    }
+
     let bgImage = "/images/bg.jpg";
 
     return(
@@ -31,16 +35,24 @@ const Layout:React.FC = (props) =>{
             <div className="container-fluid p-0">
                 <div className="row no-gutters">
                     <div className="col-lg-6">
-                        <div className="cmContent" style={{background: `url(${bgImage}) center/cover no-repeat`}}>
-                            <h2>Coming Soon</h2>
+                        <div className="cmContent" style={{background: `url(${bgImage}) center/cover no-repeat`, paddingBottom: "20%"}}>
+                            <h2>Beta is here</h2>
                             {/*<Signup/>*/}
                             <div className="newsLetter">
                                 <div className="newsLeterContent">
-                                    <h4 className="newsLetterTitle">Pay Per View is Coming to India</h4>
-                                    <p>For everyone</p>
+                                    <h4 className="newsLetterTitle">Try Our PPV Platform. That isn't complex!</h4>
+                                    {/*<p>For everyone</p>*/}
                                 </div>
                             </div>
-                            <div className="contactUs2" onClick={modalShow}>Contact Us</div>
+                            <div className="row">
+                                <div className="col">
+                                    <div className="contactUs2" style={{width:"120%"}} onClick={modalShow}>Contact Us</div>
+                                </div>
+
+                                <div className="col">
+                                    <div className="AppLink" style={{marginLeft: "10%"}} onClick={AppRedirect}>Try App</div>
+                                </div>
+                            </div>
                         </div>
                         <ContactForm open={state.open}
                                      modalClose={modalClose}/>
